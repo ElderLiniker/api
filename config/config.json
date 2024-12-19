@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "yourpassword",
+    "database": "raffle_db",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
