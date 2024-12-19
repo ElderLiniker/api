@@ -4,7 +4,6 @@ const fs = require('fs');
 const bodyParser = require('body-parser');
 
 
-const mongoose = require('mongoose');
 
 
 
@@ -242,13 +241,12 @@ app.listen(port, () => {
 
 
 
+const mongoose = require('mongoose');
 
 mongoose.connect('mongodb://localhost:27018/yourDatabase')
-    .then(() => {
-        console.log("Conectado ao MongoDB com sucesso");
-    })
-    .catch((error) => {
-        console.error("Erro ao conectar no MongoDB:", error);
-    });
-
-
+  .then(() => {
+    console.log('Conectado ao MongoDB com sucesso');
+  })
+  .catch((error) => {
+    console.error('Erro ao conectar ao MongoDB:', error);
+  });
